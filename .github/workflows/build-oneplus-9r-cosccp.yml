@@ -10,7 +10,7 @@ env:
   DEVICE_CODENAME : "lemonades"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu-"
-  EXTRA_CMDS : "BRAND_SHOW_FLAG=oneplus LD=ld.lld LLVM=1 LLVM_IAS=1"
+  EXTRA_CMDS : "BRAND_SHOW_FLAG=oneplus LD=ld.lld LLVM=1 LLVM_IAS=1 KCFLAGS=\"-w\" KCPPFLAGS=\"-w\""
 
   KERNEL_SOURCE : "https://github.com/yezhiyi9670-aosp-forks/cosccp-android_kernel_qcom_sm8250.git"
   KERNEL_BRANCH : "lineage-20"
