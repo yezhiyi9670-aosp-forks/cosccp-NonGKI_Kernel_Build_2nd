@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "BRAND_SHOW_FLAG=oneplus LD=ld.lld LLVM=1 LLVM_IAS=1 KCFLAGS=\"-w\" KCPPFLAGS=\"-w\""
 
-  KERNEL_SOURCE : "https://github.com/JackA1ltman/android_kernel_oneplus_sm8250_los_noksu.git"
-  KERNEL_BRANCH : "upstream-latest"
+  KERNEL_SOURCE : "https://github.com/yezhiyi9670-aosp-forks/cosccp-android_kernel_qcom_sm8250"
+  KERNEL_BRANCH : "lineage-20"
 
   CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/LLVM-20.1.0-Linux-X64.tar.xz"
   CLANG_BRANCH : ""
@@ -30,7 +30,7 @@ env:
   DEFCONFIG_FROM_BOOT: false
 
   KERNELSU_SOURCE : "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh"
-  KERNELSU_BRANCH : "builtin"
+  KERNELSU_BRANCH : "unused"
 
   KERNELSU_AUTO_GET : "false" # if u want easy setting kernelsu, u can true.
   KERNELSU_AUTO_FORK : "unused" # xxksu, rsuntk, next, resukisu and sukisu
